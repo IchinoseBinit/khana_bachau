@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "208964071011",
+    "project_id": "khana-bachau-bbb98",
+    "storage_bucket": "khana-bachau-bbb98.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208964071011:android:a8154d6f2f8d7e6d2a5256",
+        "android_client_info": {
+          "package_name": "com.mausam.khana_bachau"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208964071011-1vdhiovfflhflvgnl9n9cc8g5cb5bg7m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mausam.khana_bachau",
+            "certificate_hash": "e9fc5f2c7094dbcc40f8ab7e886c927bd52e7e8d"
+          }
+        },
+        {
+          "client_id": "208964071011-414gbukctiuem9dvgj450onfsj2kiqfv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEEoQWAk9O5yLQdduLTKySM_4BNU95hn0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208964071011-414gbukctiuem9dvgj450onfsj2kiqfv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
