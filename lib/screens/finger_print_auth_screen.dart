@@ -22,7 +22,15 @@ class FingerPrintAuthScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     // storeCredentials(context, email: username, password: password);
     return Scaffold(
-      appBar: AppBar(title: Text("Finger Print Screen")),
+      appBar: AppBar(
+        title: Text("Finger Print Screen"),
+        actions: [
+          TextButton(
+            onPressed: () => navigateAndRemoveAll(context, NavigationScreen()),
+            child: Text("Skip"),
+          ),
+        ],
+      ),
       body: GestureDetector(
         onTap: () {
           storeCredentials(context, email: username, password: password);

@@ -163,9 +163,12 @@ class AcceptedFoodScreen extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
-              "Accepted By: ${food.acceptingUserName!}",
-              style: Theme.of(context).textTheme.bodyText1,
+            SizedBox(
+              width: SizeConfig.width * 40,
+              child: Text(
+                "Accepted By: ${food.acceptingUserName!}",
+                style: Theme.of(context).textTheme.bodyText1,
+              ),
             ),
             const Spacer(),
             if (food.rating != null)
