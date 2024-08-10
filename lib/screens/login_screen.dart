@@ -195,7 +195,6 @@ class LoginScreen extends StatelessWidget {
     final localAuth = LocalAuthentication();
     final authenticated = await localAuth.authenticate(
       localizedReason: "Place your fingerprint to login",
-      biometricOnly: true,
     );
     if (authenticated) {
       const secureStorage = FlutterSecureStorage();

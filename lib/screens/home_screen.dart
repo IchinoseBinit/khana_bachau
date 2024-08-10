@@ -145,7 +145,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 : searchController.text.trim().isNotEmpty
                                     ? "Foods based on ${searchController.text}"
                                     : "Foods",
-                            style: Theme.of(context).textTheme.headline6,
+                            style: Theme.of(context).textTheme.titleSmall,
                           ),
                         ),
                         if (profileData.isFoodDonor)
@@ -314,14 +314,14 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           Text(
             food.name,
-            style: Theme.of(context).textTheme.headline6,
+            style: Theme.of(context).textTheme.titleSmall,
           ),
           SizedBox(
             height: SizeConfig.height * .5,
           ),
           Text(
             food.description,
-            style: Theme.of(context).textTheme.bodyText2,
+            style: Theme.of(context).textTheme.bodySmall,
           ),
           SizedBox(
             height: SizeConfig.height * 2,
@@ -334,14 +334,14 @@ class _HomeScreenState extends State<HomeScreen> {
                 children: [
                   Text(
                     "Available Quantity",
-                    style: Theme.of(context).textTheme.subtitle1,
+                    style: Theme.of(context).textTheme.labelLarge,
                   ),
                   SizedBox(
                     height: SizeConfig.height * .5,
                   ),
                   Text(
                     food.quantity.toString(),
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyMedium,
                   ),
                 ],
               ),
@@ -350,14 +350,14 @@ class _HomeScreenState extends State<HomeScreen> {
                 children: [
                   Text(
                     "Unit Price",
-                    style: Theme.of(context).textTheme.subtitle1,
+                    style: Theme.of(context).textTheme.labelLarge,
                   ),
                   SizedBox(
                     height: SizeConfig.height * .5,
                   ),
                   Text(
                     "Rs. ${food.price}",
-                    style: Theme.of(context).textTheme.bodyText1,
+                    style: Theme.of(context).textTheme.bodyMedium,
                   ),
                 ],
               ),
@@ -368,7 +368,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           Text(
             "Total Price: ${food.totalPrice}",
-            style: Theme.of(context).textTheme.headline6!.copyWith(
+            style: Theme.of(context).textTheme.titleSmall!.copyWith(
                   fontSize: 16,
                   color: Colors.deepOrange,
                 ),
@@ -383,13 +383,13 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 Text(
                   "Accepted By: ${food.acceptingUserName!}",
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyMedium,
                 ),
                 const Spacer(),
                 if (food.rating != null)
                   Text(
                     "Rating: ",
-                    style: Theme.of(context).textTheme.bodyText2,
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                 if (food.rating != null)
                   RatingBarIndicator(

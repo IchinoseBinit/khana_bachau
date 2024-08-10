@@ -60,7 +60,7 @@ class MenuScreen extends StatelessWidget {
                       ),
                       Text(
                         profileData.name!,
-                        style: Theme.of(context).textTheme.headline6,
+                        style: Theme.of(context).textTheme.titleSmall,
                       ),
                       SizedBox(
                         height: SizeConfig.height,

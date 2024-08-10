@@ -60,7 +60,7 @@ class AcceptedFoodScreen extends StatelessWidget {
                     children: [
                       Text(
                         "Accepted Foods",
-                        style: Theme.of(context).textTheme.headline6,
+                        style: Theme.of(context).textTheme.titleSmall,
                       ),
                       SizedBox(
                         height: SizeConfig.height,
@@ -98,14 +98,14 @@ class AcceptedFoodScreen extends StatelessWidget {
       children: [
         Text(
           food.name,
-          style: Theme.of(context).textTheme.headline6,
+          style: Theme.of(context).textTheme.titleSmall,
         ),
         SizedBox(
           height: SizeConfig.height * .5,
         ),
         Text(
           food.description,
-          style: Theme.of(context).textTheme.bodyText2,
+          style: Theme.of(context).textTheme.bodySmall,
         ),
         SizedBox(
           height: SizeConfig.height * 2,
@@ -118,14 +118,14 @@ class AcceptedFoodScreen extends StatelessWidget {
               children: [
                 Text(
                   "Available Quantity",
-                  style: Theme.of(context).textTheme.subtitle1,
+                  style: Theme.of(context).textTheme.labelLarge,
                 ),
                 SizedBox(
                   height: SizeConfig.height * .5,
                 ),
                 Text(
                   food.quantity.toString(),
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyMedium,
                 ),
               ],
             ),
@@ -134,14 +134,14 @@ class AcceptedFoodScreen extends StatelessWidget {
               children: [
                 Text(
                   "Unit Price",
-                  style: Theme.of(context).textTheme.subtitle1,
+                  style: Theme.of(context).textTheme.labelLarge,
                 ),
                 SizedBox(
                   height: SizeConfig.height * .5,
                 ),
                 Text(
                   "Rs. ${food.price}",
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyMedium,
                 ),
               ],
             ),
@@ -152,7 +152,7 @@ class AcceptedFoodScreen extends StatelessWidget {
         ),
         Text(
           "Total Price: ${food.totalPrice}",
-          style: Theme.of(context).textTheme.headline6!.copyWith(
+          style: Theme.of(context).textTheme.titleSmall!.copyWith(
                 fontSize: 16,
                 color: Colors.deepOrange,
               ),
@@ -167,14 +167,14 @@ class AcceptedFoodScreen extends StatelessWidget {
               width: SizeConfig.width * 40,
               child: Text(
                 "Accepted By: ${food.acceptingUserName!}",
-                style: Theme.of(context).textTheme.bodyText1,
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
             ),
             const Spacer(),
             if (food.rating != null)
               Text(
                 "Rating: ",
-                style: Theme.of(context).textTheme.bodyText2,
+                style: Theme.of(context).textTheme.bodySmall,
               ),
             if (food.rating != null)
               RatingBarIndicator(
@@ -213,7 +213,7 @@ class AcceptedFoodScreen extends StatelessWidget {
                       children: [
                         Text(
                           "Rate the food",
-                          style: Theme.of(context).textTheme.headline6,
+                          style: Theme.of(context).textTheme.titleSmall,
                         ),
                         SizedBox(
                           height: SizeConfig.height * 2,

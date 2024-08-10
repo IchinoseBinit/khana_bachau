@@ -105,7 +105,7 @@ class _SetAddressScreenState extends State<SetAddressScreen> {
                         horizontal: 20.0, vertical: 15),
                     child: Text(
                       'Set Address',
-                      style: Theme.of(context).textTheme.subtitle1,
+                      style: Theme.of(context).textTheme.labelLarge,
                     ),
                   ),
                 ),

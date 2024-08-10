@@ -35,7 +35,7 @@ class FoodTruckPostScreen extends StatelessWidget {
             children: [
               Text(
                 "Fill the information about Food Truck",
-                style: Theme.of(context).textTheme.headline6!.copyWith(
+                style: Theme.of(context).textTheme.titleSmall!.copyWith(
                       fontWeight: FontWeight.w500,
                       fontSize: 18,
                     ),

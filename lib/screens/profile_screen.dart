@@ -73,7 +73,7 @@ class ProfileScreen extends StatelessWidget {
               ),
               Text(
                 "Edit your profile",
-                style: Theme.of(context).textTheme.headline6,
+                style: Theme.of(context).textTheme.titleSmall,
               ),
               SizedBox(
                 height: SizeConfig.height * 2,
@@ -178,7 +178,7 @@ class ProfileScreen extends StatelessWidget {
           children: [
             Text(
               "Choose a source",
-              style: Theme.of(context).textTheme.headline6,
+              style: Theme.of(context).textTheme.titleSmall,
             ),
             SizedBox(
               height: SizeConfig.height * 2,

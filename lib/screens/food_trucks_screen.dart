@@ -49,7 +49,7 @@ class FoodTruckScreen extends StatelessWidget {
                     children: [
                       Text(
                         "Food Trucks",
-                        style: Theme.of(context).textTheme.headline6,
+                        style: Theme.of(context).textTheme.titleSmall,
                       ),
                       SizedBox(
                         height: SizeConfig.height,
@@ -122,14 +122,14 @@ class FoodTruckScreen extends StatelessWidget {
                 children: [
                   Text(
                     foodTruck.truckNo,
-                    style: Theme.of(context).textTheme.headline6,
+                    style: Theme.of(context).textTheme.titleSmall,
                   ),
                   SizedBox(
                     height: SizeConfig.height,
                   ),
                   Text(
                     "Available Foods:",
-                    style: Theme.of(context).textTheme.bodyText2,
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                 ],
               ),
@@ -151,7 +151,7 @@ class FoodTruckScreen extends StatelessWidget {
                       ),
                       label: Text(
                         e,
-                        style: Theme.of(context).textTheme.bodyText1,
+                        style: Theme.of(context).textTheme.bodyMedium,
                       ),
                       backgroundColor:
                           Theme.of(context).primaryColor.withOpacity(

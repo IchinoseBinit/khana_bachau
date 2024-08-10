@@ -82,10 +82,10 @@ class GeneralTextButton extends StatelessWidget {
             Text(
               title,
               style: isSmallText
-                  ? Theme.of(context).textTheme.subtitle2!.copyWith(
+                  ? Theme.of(context).textTheme.labelSmall!.copyWith(
                       color: fgColor ?? Theme.of(context).primaryColor,
                       fontWeight: FontWeight.w600)
-                  : Theme.of(context).textTheme.subtitle1!.copyWith(
+                  : Theme.of(context).textTheme.labelLarge!.copyWith(
                       color: fgColor ?? Theme.of(context).primaryColor,
                       fontWeight: FontWeight.w600),
             ),

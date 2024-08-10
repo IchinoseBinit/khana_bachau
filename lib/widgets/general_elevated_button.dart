@@ -39,12 +39,12 @@ class GeneralElevatedButton extends StatelessWidget {
   Widget build(BuildContext context) {
     if (textStyle == null) {
       if (isSmallText) {
-        textStyle = Theme.of(context).textTheme.subtitle2!.copyWith(
+        textStyle = Theme.of(context).textTheme.labelSmall!.copyWith(
               color: fgColor ?? Colors.white,
               fontWeight: FontWeight.w600,
             );
       } else {
-        textStyle = Theme.of(context).textTheme.subtitle1!.copyWith(
+        textStyle = Theme.of(context).textTheme.labelLarge!.copyWith(
               color: fgColor ?? Colors.white,
               fontWeight: FontWeight.w600,
             );

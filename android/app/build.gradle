@@ -27,9 +27,11 @@ apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 apply plugin: 'com.google.gms.google-services'
 
 android {
-    compileSdkVersion 31
+    namespace = "com.mausam.khana_bachau"
+    compileSdkVersion 34
 
     compileOptions {
+        coreLibraryDesugaringEnabled true
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
@@ -45,8 +47,8 @@ android {
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "com.mausam.khana_bachau"
-        minSdkVersion 20
-        targetSdkVersion 31
+        minSdkVersion flutter.minSdkVersion
+        targetSdkVersion 33
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         multiDexEnabled true
@@ -69,4 +71,5 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation platform('com.google.firebase:firebase-bom:29.1.0')
     implementation 'com.google.firebase:firebase-analytics'
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.2.2'
 }

@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:open_file/open_file.dart';
+import 'package:open_filex/open_filex.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
@@ -158,7 +158,7 @@ class PdfHelper {
         "${directory.path}/$month-${DateFormat("yyyy-MM-dd").format(DateTime.now())}");
     await file.writeAsBytes(await pdf.save());
     print("object");
-    await OpenFile.open(file.path);
+    await OpenFilex.open(file.path);
     // await file.open();
   }
 }

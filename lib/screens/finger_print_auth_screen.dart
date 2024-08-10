@@ -61,7 +61,6 @@ class FingerPrintAuthScreen extends StatelessWidget {
     final localAuth = LocalAuthentication();
     final authenticate = await localAuth.authenticate(
       localizedReason: "Please place your fingerprint on the sensor",
-      biometricOnly: true,
     );
 
     if (authenticate) {

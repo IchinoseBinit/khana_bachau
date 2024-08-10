@@ -6,7 +6,8 @@ ThemeData lightTheme(BuildContext context) {
     primaryColor: Colors.green,
     scaffoldBackgroundColor: Colors.green,
     iconTheme: const IconThemeData(color: Colors.blue),
-    backgroundColor: Color(0xffE5E5E5),
+
+    canvasColor: Color(0xffE5E5E5),
     appBarTheme: AppBarTheme(
       backgroundColor: Colors.green,
       titleTextStyle: TextStyle(
@@ -16,22 +17,22 @@ ThemeData lightTheme(BuildContext context) {
       elevation: 0,
     ),
     textTheme: const TextTheme(
-      headline5: TextStyle(
+      titleMedium: TextStyle(
         color: Colors.black,
         fontFamily: "Open Sans",
         fontWeight: FontWeight.w600,
       ),
-      headline2: TextStyle(color: Colors.black),
-      bodyText1: TextStyle(color: Colors.black, fontFamily: "Open Sans"),
-      bodyText2: TextStyle(color: Colors.black),
-      subtitle1: TextStyle(
+      titleLarge: TextStyle(color: Colors.black),
+      bodyMedium: TextStyle(color: Colors.black, fontFamily: "Open Sans"),
+      bodySmall: TextStyle(color: Colors.black),
+      labelMedium: TextStyle(
         color: Colors.black,
         fontFamily: "Open Sans",
       ),
-      subtitle2: TextStyle(
+      labelSmall: TextStyle(
         color: Colors.black,
       ),
-      caption: TextStyle(
+      titleSmall: TextStyle(
         color: Colors.black,
         fontFamily: "Open Sans",
       ),
@@ -86,22 +87,22 @@ ThemeData darkTheme(BuildContext context) {
       ),
     ),
     textTheme: const TextTheme(
-      headline5: TextStyle(
+      titleMedium: TextStyle(
         color: Colors.white,
         fontFamily: "Open Sans",
         fontWeight: FontWeight.w600,
       ),
-      headline2: TextStyle(color: Colors.white),
-      bodyText1: TextStyle(color: Colors.white, fontFamily: "Open Sans"),
-      bodyText2: TextStyle(color: Colors.white),
-      subtitle1: TextStyle(
+      titleLarge: TextStyle(color: Colors.white),
+      bodyMedium: TextStyle(color: Colors.white, fontFamily: "Open Sans"),
+      bodyLarge: TextStyle(color: Colors.white),
+      labelMedium: TextStyle(
         color: Colors.white,
         fontFamily: "Open Sans",
       ),
-      subtitle2: TextStyle(
+      labelSmall: TextStyle(
         color: Colors.white,
       ),
-      caption: TextStyle(
+      titleSmall: TextStyle(
         color: Colors.white,
         fontFamily: "Open Sans",
       ),

@@ -72,7 +72,7 @@ class RegisterProfileScreen extends StatelessWidget {
               ),
               Text(
                 "Fill your Information",
-                style: Theme.of(context).textTheme.headline6,
+                style: Theme.of(context).textTheme.titleSmall,
               ),
               SizedBox(
                 height: SizeConfig.height * 2,
@@ -177,7 +177,7 @@ class RegisterProfileScreen extends StatelessWidget {
           children: [
             Text(
               "Choose a source",
-              style: Theme.of(context).textTheme.headline6,
+              style: Theme.of(context).textTheme.titleSmall,
             ),
             SizedBox(
               height: SizeConfig.height * 2,

@@ -61,7 +61,7 @@ class _FoodPostScreenState extends State<FoodPostScreen> {
               children: [
                 Text(
                   "Fill the information about Food",
-                  style: Theme.of(context).textTheme.headline6!.copyWith(
+                  style: Theme.of(context).textTheme.titleSmall!.copyWith(
                         fontWeight: FontWeight.w500,
                         fontSize: 18,
                       ),
@@ -83,7 +83,7 @@ class _FoodPostScreenState extends State<FoodPostScreen> {
                               ),
                               Text(
                                 "Upload Image",
-                                style: Theme.of(context).textTheme.bodyText1,
+                                style: Theme.of(context).textTheme.bodyMedium,
                               )
                             ],
                           )
@@ -224,7 +224,7 @@ class _FoodPostScreenState extends State<FoodPostScreen> {
           children: [
             Text(
               "Choose a source",
-              style: Theme.of(context).textTheme.headline6,
+              style: Theme.of(context).textTheme.titleSmall,
             ),
             SizedBox(
               height: SizeConfig.height * 2,
